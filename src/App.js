@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Carousel from "./components/Carousel";
+import PriceCalculator from "./components/PriceCalculator";
+import CarOverview from "./components/CarOverview";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="logo">
+          <h2>Book A Car</h2>
+        </div>
+        <nav>
+          <ul>
+            <li>Buy Car</li>
+            <li>Sell Car</li>
+            <li>Account</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
       </header>
+      <main>
+        <section className="carousel-section">
+          <Carousel />
+        </section>
+        <section className="details-section">
+          <CarOverview />
+        </section>
+        <section className="calculator-section">
+          <PriceCalculator />
+        </section>
+      </main>
     </div>
   );
 }

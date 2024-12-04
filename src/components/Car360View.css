@@ -1,0 +1,43 @@
+.car-360-container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .toggle-360-button {
+    background-color: #9c27b0; /* Violet-Pink shade */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-360-button:hover {
+    background-color: #7b1fa2;
+  }
+  
+  .car-image-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .car-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .car-image-container:hover {
+    cursor: grab; /* Indicates that the image can be grabbed */
+  }
+  
+  /* Optional: If you want to handle mouse hold to rotate */
+  .car-image-container:active {
+    cursor: grabbing; /* Active hand grab when clicked */
+  }
+  

@@ -1,0 +1,114 @@
+.calculator {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+  }
+  
+  h2 {
+    color: #007bff; /* Blue-Violet for main heading */
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .slider-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .slider-container label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .slider {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+    background: #9c27b0; /* Violet color when focused */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff79c6; /* Pink Thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #d500f9; /* Darker Violet on Hover */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ff79c6;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="range"]::-moz-range-thumb:hover {
+    background-color: #d500f9; /* Darker Violet on Hover */
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Blue-Violet color for calculated price */
+    margin-top: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  h3:hover {
+    color: #9c27b0; /* Violet color on hover for dynamic interaction */
+  }
+  
+  /* Responsiveness for Mobile Devices */
+  @media (max-width: 768px) {
+    .calculator {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    input[type="range"] {
+      width: 100%;
+    }
+  
+    .slider-container {
+      margin: 10px 0;
+    }
+  }
+  
