@@ -18,17 +18,27 @@ plaintext
 Copy code
 src/
 ├── components/
+
 │   ├── Carousel.js        # Handles car image sliders (exterior and interior views)
+
 │   ├── CarOverview.js     # Displays car details and integrates the 360° view functionality
+
 ├── App.js                 # Main application component
+
 ├── App.css                # Global styles for the app
+
 ├── index.js               # Entry point of the React app
+
 public/
 ├── images/
 │   ├── exterior/          # Contains sequential images for the 360° view
+
 │   └── interior/          # Images used for sliders
+
 Setup and Installation
+
 Prerequisites
+
 Ensure you have the following installed:
 
 Node.js (v14 or higher)
